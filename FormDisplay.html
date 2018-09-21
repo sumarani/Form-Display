@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Form</title>
+        <style>
+            p{
+                color:red
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                }
+            td, th {
+                 border: 1px solid #dddddd;
+                 text-align: left;
+                 padding: 8px;
+                 }
+
+            tr:nth-child(even) {
+                 background-color: #dddddd;
+                 }
+        </style>
+        
+    
+    </head>
+    <body>
+        <div>
+        <form name="myForm" id="form-id"> 
+            <caption style="text-align: center">User Form</caption><br><br>
+            FirstName:<input type="text" name="FirstName" placeholder="Enter First Name">
+            <p id="fid"></p>
+            LastName:<input type="text" name="LastName" placeholder="Enter Last Name">
+            <p id="lid"></p>
+            Gender: <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female<br><br>
+                    DOB: <input type="date" name="birthdate"> 
+                    <p id="d-id"></p>
+                    <p id="dateid"></p>
+                    <p id="derrid"></p>
+                    Email: <input type="email" name="Email" placeholder="Enter Email address"><br><br>
+                    <p id="eid"></p>
+                    
+                    <input type="checkbox" name="Save Info">Save Password <br><br>
+                    <input type="button" name="Submit"value="Submit" onclick="validate()">
+        </form>
+        <br> <br>
+            <table style="width:50%" id="myTable">
+                <caption>User Data Display</caption>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>DOB</th>
+                </tr>
+                
+            </table>
+        
+
+    </div>
+    
+    <script src="Validations.js"></script>
+    
+    </body>
+</html>
